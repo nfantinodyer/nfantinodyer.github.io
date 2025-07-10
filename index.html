@@ -1,7 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunslinger - Known Issues & ANR Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Gunslinger</h1>
+            <p class="header-subtitle">Known Issues & ANR Tracker</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Summary Section -->
+            <section class="summary-section">
+                <h2>Issue Summary</h2>
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <h3>Total Issues</h3>
+                        <p class="summary-number">5</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Active ANRs</h3>
+                        <p class="summary-number">5</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Affected Users</h3>
+                        <p class="summary-number">5</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Last Updated</h3>
+                        <p class="summary-date">Jul 9, 2025</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Issues List Section -->
+            <section class="issues-section">
+                <h2>Known ANR Issues</h2>
+                <p class="section-subtitle">Last 28 days (Jun 11 – Jul 9, 2025)</p>
+
+                <!-- Issue 1 -->
+                <div class="issue-card">
+                    <div class="issue-header">
+                        <h3 class="issue-title">unavailable - com.ironsource.xa.J</h3>
+                        <span class="issue-status">2 days ago</span>
+                    </div>
+                    <div class="issue-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Type:</span>
+                            <span class="detail-value">ANR - Input dispatching timed out</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Version:</span>
+                            <span class="detail-value">25 (0.7.2.0)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Affected Users:</span>
+                            <span class="detail-value">1 (20.0%)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Events:</span>
+                            <span class="detail-value">1</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag tag-sdk">Possibly SDK-related</span>
+                            <span class="tag tag-binder">Slow Binder call</span>
+                        </div>
+                    </div>
+                    <div class="log-section">
+                        <button class="toggle-log-btn" onclick="toggleLog('log1')">View Log File</button>
+                        <div id="log1" class="log-container hidden">
+                            <textarea class="log-textarea" placeholder="Paste log file content here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Issue 2 -->
+                <div class="issue-card">
+                    <div class="issue-header">
+                        <h3 class="issue-title">Native method - J.N.JJ</h3>
+                        <span class="issue-status issue-status-production">In production - 18 hours ago</span>
+                    </div>
+                    <div class="issue-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Type:</span>
+                            <span class="detail-value">ANR - Input dispatching timed out</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Version:</span>
+                            <span class="detail-value">30 (0.7.36)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Affected Users:</span>
+                            <span class="detail-value">1 (20.0%)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Events:</span>
+                            <span class="detail-value">1</span>
+                        </div>
+                    </div>
+                    <div class="log-section">
+                        <button class="toggle-log-btn" onclick="toggleLog('log2')">View Log File</button>
+                        <div id="log2" class="log-container hidden">
+                            <textarea class="log-textarea" placeholder="Paste log file content here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Issue 3 -->
+                <div class="issue-card">
+                    <div class="issue-header">
+                        <h3 class="issue-title">chromium-TrichromeWebViewGoogle.aab-stable-715111731 - WV.tI.b</h3>
+                        <span class="issue-status">39 hours ago</span>
+                    </div>
+                    <div class="issue-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Type:</span>
+                            <span class="detail-value">ANR - Input dispatching timed out</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Version:</span>
+                            <span class="detail-value">25 (0.7.2.0)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Affected Users:</span>
+                            <span class="detail-value">1 (20.0%)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Events:</span>
+                            <span class="detail-value">1</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag tag-binder">Slow Binder call</span>
+                        </div>
+                    </div>
+                    <div class="log-section">
+                        <button class="toggle-log-btn" onclick="toggleLog('log3')">View Log File</button>
+                        <div id="log3" class="log-container hidden">
+                            <textarea class="log-textarea" placeholder="Paste log file content here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Issue 4 -->
+                <div class="issue-card">
+                    <div class="issue-header">
+                        <h3 class="issue-title">[libart.so] art::TypeLookupTable::IsStringsEquals(char const*, unsigned int) const</h3>
+                        <span class="issue-status">2 days ago</span>
+                    </div>
+                    <div class="issue-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Type:</span>
+                            <span class="detail-value">ANR - Input dispatching timed out</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Version:</span>
+                            <span class="detail-value">25 (0.7.2.0)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Affected Users:</span>
+                            <span class="detail-value">1 (20.0%)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Events:</span>
+                            <span class="detail-value">1</span>
+                        </div>
+                    </div>
+                    <div class="log-section">
+                        <button class="toggle-log-btn" onclick="toggleLog('log4')">View Log File</button>
+                        <div id="log4" class="log-container hidden">
+                            <textarea class="log-textarea" placeholder="Paste log file content here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Issue 5 -->
+                <div class="issue-card">
+                    <div class="issue-header">
+                        <h3 class="issue-title">[libart.so] art::ConditionVariable::WaitHoldingLocks(art::Thread*)</h3>
+                        <span class="issue-status">2 days ago</span>
+                    </div>
+                    <div class="issue-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Type:</span>
+                            <span class="detail-value">ANR - Input dispatching timed out</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Version:</span>
+                            <span class="detail-value">25 (0.7.2.0)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Affected Users:</span>
+                            <span class="detail-value">1 (20.0%)</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Events:</span>
+                            <span class="detail-value">1}}</span>
+                        </div>
+                    </div>
+                    <div class="log-section">
+                        <button class="toggle-log-btn" onclick="toggleLog('log5')">View Log File</button>
+                        <div id="log5" class="log-container hidden">
+                            <textarea class="log-textarea" placeholder="Paste log file content here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gunslinger. All rights reserved.</p>
+            <p>Data last updated: Today, 8:00 PM</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleLog(logId) {
+            const logContainer = document.getElementById(logId);
+            const button = logContainer.previousElementSibling;
+            
+            if (logContainer.classList.contains('hidden')) {
+                logContainer.classList.remove('hidden');
+                button.textContent = 'Hide Log File';
+            } else {
+                logContainer.classList.add('hidden');
+                button.textContent = 'View Log File';
+            }
+        }
+
+        // Auto-resize textareas
+        document.querySelectorAll('.log-textarea').forEach(textarea => {
+            textarea.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = this.scrollHeight + 'px';
+            });
+        });
+    </script>
 </body>
 </html>

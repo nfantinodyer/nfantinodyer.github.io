@@ -1,0 +1,1092 @@
+"main" tid=1 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x00000000000e44e5  /apex/com.android.runtime/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+80)
+  #02  pc 0x0000000000417181  /apex/com.android.runtime/lib/libart.so (art::GoToRunnable(art::Thread*) (.llvm.6336568004683303994)+324)
+  #03  pc 0x0000000000417015  /apex/com.android.runtime/lib/libart.so (art::JniMethodEnd(unsigned int, art::Thread*)+8)
+  at android.view.SurfaceControl.nativeCreate (Native method)
+  at android.view.SurfaceControl.<init> (SurfaceControl.java:793)
+  at android.view.SurfaceControl.<init> (SurfaceControl.java:77)
+  at android.view.SurfaceControl$Builder.build (SurfaceControl.java:531)
+  at android.view.ViewRootImpl.createBoundsSurface (ViewRootImpl.java:1681)
+  at android.view.SurfaceView.updateSurface (SurfaceView.java:646)
+  at android.view.SurfaceView$2.onPreDraw (SurfaceView.java:171)
+  at android.view.ViewTreeObserver.dispatchOnPreDraw (ViewTreeObserver.java:1088)
+  at android.view.ViewRootImpl.performTraversals (ViewRootImpl.java:2917)
+  at android.view.ViewRootImpl.doTraversal (ViewRootImpl.java:1840)
+  at android.view.ViewRootImpl$TraversalRunnable.run (ViewRootImpl.java:7937)
+  at android.view.Choreographer$CallbackRecord.run (Choreographer.java:980)
+  at android.view.Choreographer.doCallbacks (Choreographer.java:804)
+  at android.view.Choreographer.doFrame (Choreographer.java:739)
+  at android.view.Choreographer$FrameDisplayEventReceiver.run (Choreographer.java:965)
+  at android.os.Handler.handleCallback (Handler.java:883)
+  at android.os.Handler.dispatchMessage (Handler.java:100)
+  at android.os.Looper.loop (Looper.java:264)
+  at android.app.ActivityThread.main (ActivityThread.java:7663)
+  at java.lang.reflect.Method.invoke (Native method)
+  at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run (RuntimeInit.java:492)
+  at com.android.internal.os.ZygoteInit.main (ZygoteInit.java:980)
+
+"UnityMain" tid=20 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at com.unity3d.player.G0.run (SourceFile)
+
+"Signal Catcher" tid=4 Runnable
+  #00  pc 0x00000000002fe4cf  /apex/com.android.runtime/lib/libart.so (art::DumpNativeStack(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, int, BacktraceMap*, char const*, art::ArtMethod*, void*, bool)+78)
+  #01  pc 0x00000000003a6dfb  /apex/com.android.runtime/lib/libart.so (art::Thread::DumpStack(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool, BacktraceMap*, bool) const+358)
+  #02  pc 0x00000000003a35d3  /apex/com.android.runtime/lib/libart.so (art::Thread::Dump(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool, BacktraceMap*, bool) const+34)
+  #03  pc 0x00000000003bbffd  /apex/com.android.runtime/lib/libart.so (art::DumpCheckpoint::Run(art::Thread*)+576)
+  #04  pc 0x00000000003b69ad  /apex/com.android.runtime/lib/libart.so (art::ThreadList::RunCheckpoint(art::Closure*, art::Closure*)+296)
+  #05  pc 0x00000000003b60cd  /apex/com.android.runtime/lib/libart.so (art::ThreadList::Dump(std::__1::basic_ostream<char, std::__1::char_traits<char>>&, bool)+1416)
+  #06  pc 0x00000000003b5a61  /apex/com.android.runtime/lib/libart.so (art::ThreadList::DumpForSigQuit(std::__1::basic_ostream<char, std::__1::char_traits<char>>&)+640)
+  #07  pc 0x000000000038055b  /apex/com.android.runtime/lib/libart.so (art::Runtime::DumpForSigQuit(std::__1::basic_ostream<char, std::__1::char_traits<char>>&)+130)
+  #08  pc 0x000000000038eecd  /apex/com.android.runtime/lib/libart.so (art::SignalCatcher::HandleSigQuit()+1036)
+  #09  pc 0x000000000038e337  /apex/com.android.runtime/lib/libart.so (art::SignalCatcher::Run(void*)+242)
+  #10  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #11  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Jit thread pool worker thread 0" tid=2 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x00000000000e44e5  /apex/com.android.runtime/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+80)
+  #02  pc 0x00000000003bd307  /apex/com.android.runtime/lib/libart.so (art::ThreadPool::GetTask(art::Thread*)+174)
+  #03  pc 0x00000000003bca8d  /apex/com.android.runtime/lib/libart.so (art::ThreadPoolWorker::Run()+72)
+  #04  pc 0x00000000003bc6df  /apex/com.android.runtime/lib/libart.so (art::ThreadPoolWorker::Callback(void*)+90)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"HeapTaskDaemon" tid=8 Waiting
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x00000000000e44e5  /apex/com.android.runtime/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+80)
+  #02  pc 0x00000000001d25b7  /apex/com.android.runtime/lib/libart.so (art::gc::TaskProcessor::GetTask(art::Thread*)+294)
+  #03  pc 0x00000000001d2bf5  /apex/com.android.runtime/lib/libart.so (art::gc::TaskProcessor::RunAllTasks(art::Thread*)+48)
+  at dalvik.system.VMRuntime.runHeapTasks (Native method)
+  at java.lang.Daemons$HeapTaskDaemon.runInternal (Daemons.java:523)
+  at java.lang.Daemons$Daemon.run (Daemons.java:137)
+  at java.lang.Thread.run (Thread.java:919)
+
+"ReferenceQueueDaemon" tid=9 Waiting
+  at java.lang.Object.wait (Native method)
+  at java.lang.Object.wait (Object.java:442)
+  at java.lang.Object.wait (Object.java:568)
+  at java.lang.Daemons$ReferenceQueueDaemon.runInternal (Daemons.java:215)
+  at java.lang.Daemons$Daemon.run (Daemons.java:137)
+  at java.lang.Thread.run (Thread.java:919)
+
+"FinalizerDaemon" tid=10 Waiting
+  at java.lang.Object.wait (Native method)
+  at java.lang.Object.wait (Object.java:442)
+  at java.lang.ref.ReferenceQueue.remove (ReferenceQueue.java:190)
+  at java.lang.ref.ReferenceQueue.remove (ReferenceQueue.java:211)
+  at java.lang.Daemons$FinalizerDaemon.runInternal (Daemons.java:271)
+  at java.lang.Daemons$Daemon.run (Daemons.java:137)
+  at java.lang.Thread.run (Thread.java:919)
+
+"FinalizerWatchdogDaemon" tid=11 Waiting
+  at java.lang.Object.wait (Native method)
+  at java.lang.Object.wait (Object.java:442)
+  at java.lang.Object.wait (Object.java:568)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.sleepUntilNeeded (Daemons.java:339)
+  at java.lang.Daemons$FinalizerWatchdogDaemon.runInternal (Daemons.java:319)
+  at java.lang.Daemons$Daemon.run (Daemons.java:137)
+  at java.lang.Thread.run (Thread.java:919)
+
+"Binder:13103_1" tid=12 Native
+  #00  pc 0x00000000000962f0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8)
+  #01  pc 0x0000000000064c9d  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+28)
+  #02  pc 0x000000000003bd39  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+208)
+  #03  pc 0x000000000003c2c1  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
+  #04  pc 0x000000000003c8af  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38)
+  #05  pc 0x0000000000055855  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
+  #06  pc 0x000000000000d8b3  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+182)
+  #07  pc 0x0000000000080ac9  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+84)
+  #08  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #09  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Binder:13103_2" tid=13 Native
+  #00  pc 0x00000000000962f0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8)
+  #01  pc 0x0000000000064c9d  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+28)
+  #02  pc 0x000000000003bd39  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+208)
+  #03  pc 0x000000000003c2c1  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
+  #04  pc 0x000000000003c8af  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38)
+  #05  pc 0x0000000000055855  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
+  #06  pc 0x000000000000d8b3  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+182)
+  #07  pc 0x0000000000080ac9  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+84)
+  #08  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #09  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"AppLiceJDWP" tid=14 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"Profile Saver" tid=15 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x00000000000e44e5  /apex/com.android.runtime/lib/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+80)
+  #02  pc 0x00000000002623a1  /apex/com.android.runtime/lib/libart.so (art::ProfileSaver::Run()+344)
+  #03  pc 0x000000000026514b  /apex/com.android.runtime/lib/libart.so (art::ProfileSaver::RunProfileSaverThread(void*)+50)
+  #04  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #05  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"WM.task-1" tid=16 Waiting
+  at sun.misc.Unsafe.park (Native method)
+  at java.util.concurrent.locks.LockSupport.park (LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await (AbstractQueuedSynchronizer.java:2067)
+  at java.util.concurrent.LinkedBlockingQueue.take (LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask (ThreadPoolExecutor.java:1092)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1152)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:641)
+  at java.lang.Thread.run (Thread.java:919)
+
+"GmsDynamite" tid=18 Waiting
+  at java.lang.Object.wait (Native method)
+  at java.lang.Object.wait (Object.java:442)
+  at java.lang.Object.wait (Object.java:568)
+  at com.google.android.gms.dynamite.zza.run (com.google.android.gms:play-services-basement@@18.3.0)
+
+"WM.task-2" tid=19 Waiting
+  at sun.misc.Unsafe.park (Native method)
+  at java.util.concurrent.locks.LockSupport.park (LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await (AbstractQueuedSynchronizer.java:2067)
+  at java.util.concurrent.LinkedBlockingQueue.take (LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask (ThreadPoolExecutor.java:1092)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1152)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:641)
+  at java.lang.Thread.run (Thread.java:919)
+
+"IronSourceInitiatorHandler" tid=21 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"mediationBackground" tid=22 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"adapterBackground" tid=23 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"publisher-callbacks" tid=24 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"AsyncTask #1" tid=17 Waiting
+  at sun.misc.Unsafe.park (Native method)
+  at java.util.concurrent.locks.LockSupport.park (LockSupport.java:190)
+  at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill (SynchronousQueue.java:459)
+  at java.util.concurrent.SynchronousQueue$TransferStack.transfer (SynchronousQueue.java:362)
+  at java.util.concurrent.SynchronousQueue.take (SynchronousQueue.java:920)
+  at java.util.concurrent.ThreadPoolExecutor.getTask (ThreadPoolExecutor.java:1092)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1152)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:641)
+  at java.lang.Thread.run (Thread.java:919)
+
+"queued-work-looper" tid=25 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"AudioPortEventHandler" tid=26 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"AudioTrack" tid=27 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x00000000000444ed  /system/lib/libaudioclient.so (android::AudioTrack::AudioTrackThread::threadLoop()+64)
+  #04  pc 0x000000000000d93b  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+318)
+  #05  pc 0x0000000000080ac9  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+84)
+  #06  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #07  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Binder:13103_3" tid=28 Native
+  #00  pc 0x00000000000962f0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8)
+  #01  pc 0x0000000000064c9d  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+28)
+  #02  pc 0x000000000003bd39  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+208)
+  #03  pc 0x000000000003c2c1  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
+  #04  pc 0x000000000003c8af  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38)
+  #05  pc 0x0000000000055855  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
+  #06  pc 0x000000000000d8b3  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+182)
+  #07  pc 0x0000000000080ac9  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+84)
+  #08  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #09  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"managersThread" tid=3 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"Thread-6" tid=5 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at com.ironsource.cm$b.run (SourceFile)
+
+"UnityChoreographer" tid=6 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"Chrome_ProcessLauncherThread" tid=31 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"GoogleApiHandler" tid=32 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"ThreadPoolForeg" tid=33 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0d10d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0cf91  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002a4fb63  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002a4faa5  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002a4fa57  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Chrome_IOThread" tid=34 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000002b0fdeb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #03  pc 0x0000000002b10bdf  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0b8dd  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0b51d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0b4bb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000003662b1b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002b671c7  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #11  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"ThreadPoolForeg" tid=35 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0d10d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0cf91  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002a4fb63  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002a4faa5  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002a4fa57  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"PlatformServiceBridgeHandlerThread" tid=36 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"ThreadPoolSingl" tid=37 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0d10d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0cf91  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002a4fb63  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000003254eb5  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002a4fa85  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"ThreadPoolSingl" tid=38 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0d10d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0cf91  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002a4fb63  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x000000000289b115  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002a4fa7b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"ThreadPoolForeg" tid=39 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0d10d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0cf91  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002a4fb63  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002a4faa5  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002a4fa57  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"CleanupReference" tid=40 Waiting
+  at java.lang.Object.wait (Native method)
+  at java.lang.Object.wait (Object.java:442)
+  at java.lang.ref.ReferenceQueue.remove (ReferenceQueue.java:190)
+  at java.lang.ref.ReferenceQueue.remove (ReferenceQueue.java:211)
+  at WV.Xe.run (chromium-TrichromeWebViewGoogle.aab-stable-715111530:3)
+
+"CameraAvailabilityObserver_ObservationThread" tid=41 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"xt" tid=42 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"ISEventThread" tid=43 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"RVEventThread" tid=44 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"PXLEventThread" tid=45 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"Binder:13103_4" tid=46 Native
+  #00  pc 0x00000000000962f0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8)
+  #01  pc 0x0000000000064c9d  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+28)
+  #02  pc 0x000000000003bd39  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+208)
+  #03  pc 0x000000000003c2c1  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
+  #04  pc 0x000000000003c8af  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38)
+  #05  pc 0x0000000000055855  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
+  #06  pc 0x000000000000d8b3  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+182)
+  #07  pc 0x0000000000080ac9  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+84)
+  #08  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #09  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"ThreadPoolForeg" tid=47 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0d10d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0cf91  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002a4fb63  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002a4faa5  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002a4fa57  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"GoogleApiHandler" tid=48 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000000cfbb3  /system/lib/libandroid_runtime.so (android::android_os_MessageQueue_nativePollOnce(_JNIEnv*, _jobject*, long long, int)+24)
+  at android.os.MessageQueue.nativePollOnce (Native method)
+  at android.os.MessageQueue.next (MessageQueue.java:336)
+  at android.os.Looper.loop (Looper.java:215)
+  at android.os.HandlerThread.run (HandlerThread.java:67)
+
+"pool-4-thread-1" tid=49 Timed Waiting
+  at sun.misc.Unsafe.park (Native method)
+  at java.util.concurrent.locks.LockSupport.parkNanos (LockSupport.java:230)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos (AbstractQueuedSynchronizer.java:2109)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take (ScheduledThreadPoolExecutor.java:1132)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take (ScheduledThreadPoolExecutor.java:849)
+  at java.util.concurrent.ThreadPoolExecutor.getTask (ThreadPoolExecutor.java:1092)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1152)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:641)
+  at java.lang.Thread.run (Thread.java:919)
+
+"pool-7-thread-1" tid=50 Waiting
+  at sun.misc.Unsafe.park (Native method)
+  at java.util.concurrent.locks.LockSupport.park (LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await (AbstractQueuedSynchronizer.java:2067)
+  at java.util.concurrent.LinkedBlockingQueue.take (LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask (ThreadPoolExecutor.java:1092)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1152)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:641)
+  at java.lang.Thread.run (Thread.java:919)
+
+"ThreadPoolForeg" tid=51 Native
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0d10d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0cf91  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002a4fb63  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002a4faa5  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002a4fa57  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Binder:13103_5" tid=52 Native
+  #00  pc 0x00000000000962f0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8)
+  #01  pc 0x0000000000064c9d  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+28)
+  #02  pc 0x000000000003bd39  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+208)
+  #03  pc 0x000000000003c2c1  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
+  #04  pc 0x000000000003c8af  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38)
+  #05  pc 0x0000000000055855  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
+  #06  pc 0x000000000000d8b3  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+182)
+  #07  pc 0x0000000000080ac9  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+84)
+  #08  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #09  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"pool-8-thread-1" tid=7 Waiting
+  at sun.misc.Unsafe.park (Native method)
+  at java.util.concurrent.locks.LockSupport.park (LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await (AbstractQueuedSynchronizer.java:2067)
+  at java.util.concurrent.LinkedBlockingQueue.take (LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask (ThreadPoolExecutor.java:1092)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1152)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:641)
+  at java.lang.Thread.run (Thread.java:919)
+
+"PlayBillingLibrary-1" tid=29 Waiting
+  at sun.misc.Unsafe.park (Native method)
+  at java.util.concurrent.locks.LockSupport.park (LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await (AbstractQueuedSynchronizer.java:2067)
+  at java.util.concurrent.LinkedBlockingQueue.take (LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask (ThreadPoolExecutor.java:1092)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1152)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:641)
+  at java.lang.Thread.run (Thread.java:919)
+
+"ProcessStablePhenotypeFlag" tid=30 Waiting
+  at sun.misc.Unsafe.park (Native method)
+  at java.util.concurrent.locks.LockSupport.park (LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await (AbstractQueuedSynchronizer.java:2067)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take (ScheduledThreadPoolExecutor.java:1120)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take (ScheduledThreadPoolExecutor.java:849)
+  at java.util.concurrent.ThreadPoolExecutor.getTask (ThreadPoolExecutor.java:1092)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1152)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:641)
+  at java.lang.Thread.run (Thread.java:919)
+
+"Binder:13103_6" tid=53 Native
+  #00  pc 0x00000000000962f0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8)
+  #01  pc 0x0000000000064c9d  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+28)
+  #02  pc 0x000000000003bd39  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+208)
+  #03  pc 0x000000000003c2c1  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
+  #04  pc 0x000000000003c8af  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38)
+  #05  pc 0x0000000000055855  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
+  #06  pc 0x000000000000d8b3  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+182)
+  #07  pc 0x0000000000080ac9  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+84)
+  #08  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #09  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"PlayBillingLibrary-2" tid=54 Waiting
+  at sun.misc.Unsafe.park (Native method)
+  at java.util.concurrent.locks.LockSupport.park (LockSupport.java:190)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await (AbstractQueuedSynchronizer.java:2067)
+  at java.util.concurrent.LinkedBlockingQueue.take (LinkedBlockingQueue.java:442)
+  at java.util.concurrent.ThreadPoolExecutor.getTask (ThreadPoolExecutor.java:1092)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1152)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:641)
+  at java.lang.Thread.run (Thread.java:919)
+
+"Binder:13103_7" tid=55 Native
+  #00  pc 0x00000000000962f0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8)
+  #01  pc 0x0000000000064c9d  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+28)
+  #02  pc 0x000000000003bd39  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+208)
+  #03  pc 0x000000000003c2c1  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8)
+  #04  pc 0x000000000003c8af  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38)
+  #05  pc 0x0000000000055855  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12)
+  #06  pc 0x000000000000d8b3  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+182)
+  #07  pc 0x0000000000080ac9  /system/lib/libandroid_runtime.so (android::AndroidRuntime::javaThreadShell(void*)+84)
+  #08  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #09  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"RenderThread" tid=57 Native
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000000010643  /system/lib/libutils.so (android::Looper::pollInner(int)+118)
+  #03  pc 0x0000000000010553  /system/lib/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+30)
+  #04  pc 0x00000000002b440b  /system/lib/libhwui.so (android::uirenderer::ThreadBase::waitForWork()+86)
+  #05  pc 0x00000000002b4337  /system/lib/libhwui.so (android::uirenderer::renderthread::RenderThread::threadLoop()+66)
+  #06  pc 0x000000000000d8b3  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+182)
+  #07  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #08  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"ames.Gunslinger" tid=13141 Unknown
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000000041ef7  /vendor/lib/egl/libMEOW_gift.so
+  #04  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #05  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"AssetGarbageCol" tid=13153 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x0000000000233229  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Semaphore::WaitForSignalNoProfile(int)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d6741  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (AGCThread::Run()) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x00000000002d8ccf  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (AGCThread::RunThread(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #06  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #07  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"AssetGarbageCol" tid=13154 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x0000000000233229  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Semaphore::WaitForSignalNoProfile(int)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d6741  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (AGCThread::Run()) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x00000000002d8ccf  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (AGCThread::RunThread(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #06  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #07  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"AssetGarbageCol" tid=13155 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x0000000000233229  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Semaphore::WaitForSignalNoProfile(int)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d6741  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (AGCThread::Run()) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x00000000002d8ccf  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (AGCThread::RunThread(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #06  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #07  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"GC Finalizer" tid=13207 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000a8594d  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp_baselib::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #02  pc 0x0000000000a34d4c  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::os::ThreadImpl::AcquireSemaphore()) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #03  pc 0x0000000000a34aa8  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::os::WaitObject::ConditionWait(il2cpp::os::ThreadImpl*)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #04  pc 0x0000000000a348a8  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::os::WaitObject::Wait(unsigned int, bool)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #05  pc 0x0000000000a0ab2c  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::gc::FinalizerThread(void*)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #06  pc 0x0000000000a3291c  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::os::Thread::RunWrapper(void*)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #07  pc 0x0000000000a35ef0  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::os::ThreadImpl::ThreadStartWrapper(void*)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #08  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #09  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Job.Worker 0" tid=13226 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Job.Worker 1" tid=13227 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Job.Worker 2" tid=13228 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13229 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13230 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Thread-14" tid=13231 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13232 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13233 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13234 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13235 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13236 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13237 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13238 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13239 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13240 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13241 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13242 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13243 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Background Job." tid=13244 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"BatchDeleteObje" tid=13245 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x0000000000233229  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Semaphore::WaitForSignalNoProfile(int)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x0000000000333137  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (ThreadedStreamBuffer::HandleOutOfBufferToReadFrom(ThreadedStreamBuffer::DataOffsets)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x00000000002d634f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (BatchDeleteStep2Threaded(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #06  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #07  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Loading.AsyncRe" tid=13246 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x0000000000233229  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Semaphore::WaitForSignalNoProfile(int)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x000000000024e461  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (AsyncReadManagerThreaded::ThreadEntry()) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x000000000024e1a3  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (AsyncReadManagerThreaded::StaticThreadEntry(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #06  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #07  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"ged-swd" tid=13249 Unknown
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000000006794  /vendor/lib/libged.so (ged_cond_lock+36)
+  #04  pc 0x0000000000006b94  /vendor/lib/libged.so
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"UnityGfxDeviceW" tid=13265 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x0000000000233229  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Semaphore::WaitForSignalNoProfile(int)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x0000000000333137  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (ThreadedStreamBuffer::HandleOutOfBufferToReadFrom(ThreadedStreamBuffer::DataOffsets)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x000000000096c13b  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (GfxDeviceWorker::RunCommand(ThreadedStreamBuffer&)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x000000000096c0ad  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (GfxDeviceWorker::RunExt(ThreadedStreamBuffer&)) (BuildId: 2c4d24ebeb121629)
+  #06  pc 0x000000000096bdd3  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (GfxDeviceWorker::RunGfxDeviceWorker(void*)) (BuildId: 2c4d24ebeb121629)
+  #07  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #08  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #09  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"FMOD Android AA" tid=13273 Unknown
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x0000000000066ecb  /apex/com.android.runtime/lib/bionic/libc.so (sem_wait+80)
+  #03  pc 0x0000000000bb47c5  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (FMOD_OS_Semaphore_Wait(FMOD_OS_SEMAPHORE*)) (BuildId: 2c4d24ebeb121629)
+
+"FMOD stream thr" tid=13284 Unknown
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a6c3d  /apex/com.android.runtime/lib/bionic/libc.so (NonPI::MutexLockWithTimeout(pthread_mutex_internal_t*, bool, timespec const*)+408)
+  #03  pc 0x0000000000bb46f5  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (FMOD_OS_CriticalSection_Enter(FMOD_OS_CRITICALSECTION*)) (BuildId: 2c4d24ebeb121629)
+
+"Loading.Preload" tid=13351 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x0000000000233229  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Semaphore::WaitForSignalNoProfile(int)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002ed325  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (PreloadManager::Run()) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x00000000002ed2e7  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (PreloadManager::Run(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #06  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #07  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"CloudJob.Worker" tid=13470 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000b3584f  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (UnityClassic::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 2c4d24ebeb121629)
+  #02  pc 0x00000000002d4095  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (lane_guts(ujob_control_t*, ujob_lane_t*, int, int, ujob_dependency_chain const*)) (BuildId: 2c4d24ebeb121629)
+  #03  pc 0x00000000002d4899  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (worker_thread_routine(void*)) (BuildId: 2c4d24ebeb121629)
+  #04  pc 0x0000000000332b39  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libunity.so (Thread::RunThreadWrapper(void*)) (BuildId: 2c4d24ebeb121629)
+  #05  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #06  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"ThreadPoolServi" tid=13756 Unknown
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000002b0fdeb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #03  pc 0x0000000002b10bdf  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0b8dd  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0b51d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0b4bb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0b421  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002b671c7  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #11  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"MemoryInfra" tid=13762 Unknown
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002abb25d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0b8dd  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002b0b51d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002b0b4bb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002b671c7  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"AudioThread" tid=13765 Unknown
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002abb25d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0b8dd  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002b0b51d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002b0b4bb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002b671c7  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"VideoCaptureThr" tid=13766 Unknown
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002abb25d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0b8dd  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002b0b51d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002b0b4bb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002b671c7  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"ThreadPoolForeg" tid=13768 Unknown
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0d10d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0cf91  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002a4fb63  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002a4faa5  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002a4fa57  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"NetworkService" tid=13770 Unknown
+  #00  pc 0x00000000000961b4  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20)
+  #01  pc 0x0000000000068bc1  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16)
+  #02  pc 0x0000000002b0fdeb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #03  pc 0x0000000002b10bdf  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0b8dd  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0b51d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002b0b4bb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b671c7  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #10  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"CookieMonsterCl" tid=13771 Unknown
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002abb25d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0b8dd  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002b0b51d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002b0b4bb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002b671c7  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"CookieMonsterBa" tid=13772 Unknown
+  #00  pc 0x000000000005a7d0  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28)
+  #01  pc 0x000000000005fb87  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+86)
+  #02  pc 0x00000000000a581d  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32)
+  #03  pc 0x0000000002bbfcdb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #04  pc 0x0000000002b0ce8b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #05  pc 0x0000000002b0cbf3  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #06  pc 0x0000000002abb25d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #07  pc 0x0000000002b0b8dd  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #08  pc 0x0000000002b0b51d  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #09  pc 0x0000000002b0b4bb  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #10  pc 0x0000000002b671c7  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #11  pc 0x0000000002b66f0b  /data/app/com.google.android.trichromelibrary_715111530-KvQEaD4Y2AgdE8owxVq9oA==/base.apk!libmonochrome.so
+  #12  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #13  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"Timer-Scheduler" tid=14008 Unknown
+  #00  pc 0x000000000005a7d4  /apex/com.android.runtime/lib/bionic/libc.so (syscall+32)
+  #01  pc 0x0000000000a8594d  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp_baselib::Baselib_SystemFutex_Wait(int*, int, unsigned int)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #02  pc 0x0000000000a34d4c  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::os::ThreadImpl::AcquireSemaphore()) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #03  pc 0x0000000000a34aa8  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::os::WaitObject::ConditionWait(il2cpp::os::ThreadImpl*)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #04  pc 0x0000000000a348a8  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::os::WaitObject::Wait(unsigned int, bool)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #05  pc 0x0000000000a15d40  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::icalls::mscorlib::System::Threading::WaitHandle::Wait_internal(int*, int, bool, int)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #06  pc 0x0000000001d29f00  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (WaitHandle_WaitOneNative_m5E01D22F3623A149BB9AAB34819BB5A4AD9A3B78) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #07  pc 0x0000000001d29cd8  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (WaitHandle_InternalWaitOne_m0ED7DD6188A3E59D625CB3F43494C6FDABF258A2) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #08  pc 0x0000000001d29c28  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (WaitHandle_WaitOne_mE0E26649881CB67020E4D59EAAF49876553B9ED7) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #09  pc 0x0000000001d29b24  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (WaitHandle_WaitOne_mB14C7B13361C8F8D5C2A415B1DDD5AAC32F87E43) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #10  pc 0x0000000001d2d344  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (Scheduler_SchedulerThread_m027620418F0E6B0C8B2DF625A27396A36A9930EB) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #11  pc 0x0000000001d22cfc  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (ExecutionContext_RunInternal_mC37E85D6FC972DF219A00FE1EE34329D1D63CC94) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #12  pc 0x0000000001d22b74  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (ExecutionContext_Run_m6E5E07E0131DA97C6BC235754A0682CFFACE7BF8) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #13  pc 0x0000000001d1e590  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (ExecutionContext_Run_m9C6E6249D96EA4974FD420E5FF141C221C9C1BE5) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #14  pc 0x0000000000a6139c  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::vm::Runtime::InvokeWithThrow(MethodInfo const*, void*, void**)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #15  pc 0x0000000000a612e8  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::vm::Runtime::Invoke(MethodInfo const*, void*, void**, Il2CppException**)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #16  pc 0x0000000000a15a70  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::icalls::mscorlib::System::Threading::ThreadStart(void*)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #17  pc 0x0000000000a3291c  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::os::Thread::RunWrapper(void*)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #18  pc 0x0000000000a35ef0  /data/app/com.NFDGames.Gunslinger-TyMwPw_S0GpuGnLc1g6rGg==/lib/arm/libil2cpp.so (il2cpp::os::ThreadImpl::ThreadStartWrapper(void*)) (BuildId: 60a0d5cc53b72725cc09e1057959d0be11759cb6)
+  #19  pc 0x00000000000a60b3  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+20)
+  #20  pc 0x0000000000060783  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30)
+
+"<unknown>" tid=14012 Unknown

@@ -1,0 +1,363 @@
+"ames.Gunslinger" tid=26662 Native
+  #00  pc 0x00000000004051c0  /system/lib64/libart.so (art::TypeLookupTable::IsStringsEquals(char const*, unsigned int) const+52)
+  #01  pc 0x0000000000403988  /system/lib64/libart.so (art::OatDexFile::FindClassDef(art::DexFile const&, char const*, unsigned long)+112)
+
+"UnityMain" tid=26704 Native
+  #00  pc 0x000000000036eb58  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (BuildId: c5f4a078de13d086)
+  #01  pc 0x00000000001da630  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (BuildId: c5f4a078de13d086)
+
+"Jit thread pool" tid=26667 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7040  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+
+"Signal Catcher" tid=26668 Native
+  #00  pc 0x0000000000003a3c  /system/lib64/libunwind.so (map_find_from_addr+32)
+  #01  pc 0x000000000001132c  /system/lib64/libunwind.so (is_flag_set+56)
+
+"ReferenceQueueD" tid=26669 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7040  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+
+"FinalizerDaemon" tid=26670 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7040  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+
+"FinalizerWatchd" tid=26671 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7460  /system/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+
+"HeapTaskDaemon" tid=26672 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7040  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+
+"Binder:26662_1" tid=26673 Native
+  #00  pc 0x000000000006adc4  /system/lib64/libc.so (__ioctl+4)
+  #01  pc 0x0000000000024070  /system/lib64/libc.so (ioctl+136)
+
+"Binder:26662_2" tid=26674 Native
+  #00  pc 0x000000000006adc4  /system/lib64/libc.so (__ioctl+4)
+  #01  pc 0x0000000000024070  /system/lib64/libc.so (ioctl+136)
+
+"Binder:26662_3" tid=26675 Native
+  #00  pc 0x000000000006adc4  /system/lib64/libc.so (__ioctl+4)
+  #01  pc 0x0000000000024070  /system/lib64/libc.so (ioctl+136)
+
+"Profile Saver" tid=26686 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7460  /system/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+
+"WM.task-1" tid=26688 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7040  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+
+"GmsDynamite" tid=26691 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7040  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+
+"WM.task-2" tid=26693 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7040  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+
+"IronSourceIniti" tid=26705 Native
+  #00  pc 0x000000000006adc4  /system/lib64/libc.so (__ioctl+4)
+  #01  pc 0x0000000000024070  /system/lib64/libc.so (ioctl+136)
+
+"mediationBackgr" tid=26706 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7460  /system/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+
+"adapterBackgrou" tid=26707 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"publisher-callb" tid=26708 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"ames.Gunslinger" tid=26710 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067c74  /system/lib64/libc.so (pthread_cond_wait+96)
+
+"AssetGarbageCol" tid=26711 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"AssetGarbageCol" tid=26712 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"AssetGarbageCol" tid=26713 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"AssetGarbageCol" tid=26714 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"queued-work-loo" tid=26717 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"GC Finalizer" tid=26718 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x000000000157c640  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libil2cpp.so (il2cpp_baselib::Baselib_SystemFutex_Wait(int*, int, unsigned int)+20250624) (BuildId: 203df53fd10bdb6fe7fdde06339719acc48b0b10)
+
+"Job.Worker 0" tid=26719 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Job.Worker 1" tid=26720 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Job.Worker 2" tid=26721 Native
+  #00  pc 0x000000000001d4f0  /system/lib64/libc.so (syscall+32)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Job.Worker 3" tid=26722 Native
+  #00  pc 0x000000000001d4f0  /system/lib64/libc.so (syscall+32)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26723 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26724 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Thread-11" tid=26725 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26726 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26727 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26728 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26729 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26730 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26731 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26732 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26733 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26734 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26735 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26736 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26737 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Background Job." tid=26738 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"BatchDeleteObje" tid=26740 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"Loading.AsyncRe" tid=26741 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"ged-swd" tid=26742 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067c74  /system/lib64/libc.so (pthread_cond_wait+96)
+
+"UnityGfxDeviceW" tid=26743 Native
+  #00  pc 0x00000000000afd80  /vendor/lib64/egl/libGLESv2_mtk.so
+  #01  pc 0x00000000000afcb0  /vendor/lib64/egl/libGLESv2_mtk.so
+
+"UnityGfxDeviceW" tid=26745 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067d58  /system/lib64/libc.so (pthread_cond_timedwait+156)
+
+"AudioTrack" tid=26748 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x000000000004ee68  /system/lib64/libaudioclient.so (android::ClientProxy::obtainBuffer(android::Proxy::Buffer*, timespec const*, timespec*)+560)
+
+"FMOD Android AA" tid=26749 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000027a44  /system/lib64/libc.so (sem_wait+100)
+
+"FMOD stream thr" tid=26750 Native
+  #00  pc 0x000000000006b6dc  /system/lib64/libc.so (nanosleep+4)
+  #01  pc 0x0000000000042510  /system/lib64/libc.so (usleep+76)
+
+"Loading.Preload" tid=26751 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"CloudJob.Worker" tid=26787 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000ac2f94  /data/app/com.NFDGames.Gunslinger-LcIS6yOFbbaDozlevqNFDA==/lib/arm64/libunity.so (CullStaticSceneWithUmbra(JobFence&, SceneCullingParameters const&, CullingOutput&)+4698112) (BuildId: c5f4a078de13d086)
+
+"managersThread" tid=26848 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"Thread-6" tid=26857 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"UnityChoreograp" tid=26863 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"CrAsyncTask #1" tid=26997 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7460  /system/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+
+"CrAsyncTask #2" tid=26999 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7460  /system/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+
+"CrAsyncTask #3" tid=27000 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7460  /system/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+
+"CrAsyncTask #4" tid=27002 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7460  /system/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+
+"Chrome_ProcessL" tid=27003 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"GoogleApiHandle" tid=27014 Native
+  #00  pc 0x000000000006adc4  /system/lib64/libc.so (__ioctl+4)
+  #01  pc 0x0000000000024070  /system/lib64/libc.so (ioctl+136)
+
+"ThreadPoolServi" tid=27052 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"ThreadPoolForeg" tid=27053 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067d58  /system/lib64/libc.so (pthread_cond_timedwait+156)
+
+"ThreadPoolForeg" tid=27054 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067d58  /system/lib64/libc.so (pthread_cond_timedwait+156)
+
+"ThreadPoolForeg" tid=27056 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067d58  /system/lib64/libc.so (pthread_cond_timedwait+156)
+
+"ThreadPoolForeg" tid=27057 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067d58  /system/lib64/libc.so (pthread_cond_timedwait+156)
+
+"Chrome_IOThread" tid=27058 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"MemoryInfra" tid=27059 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067c74  /system/lib64/libc.so (pthread_cond_wait+96)
+
+"AudioThread" tid=27063 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067c74  /system/lib64/libc.so (pthread_cond_wait+96)
+
+"VideoCaptureThr" tid=27064 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067c74  /system/lib64/libc.so (pthread_cond_wait+96)
+
+"ThreadPoolForeg" tid=27081 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067d58  /system/lib64/libc.so (pthread_cond_timedwait+156)
+
+"NetworkService" tid=27082 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"CookieMonsterCl" tid=27085 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067c74  /system/lib64/libc.so (pthread_cond_wait+96)
+
+"CookieMonsterBa" tid=27086 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067c74  /system/lib64/libc.so (pthread_cond_wait+96)
+
+"ThreadPoolSingl" tid=27087 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067d58  /system/lib64/libc.so (pthread_cond_timedwait+156)
+
+"ThreadPoolForeg" tid=27088 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067d58  /system/lib64/libc.so (pthread_cond_timedwait+156)
+
+"PlatformService" tid=27091 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7460  /system/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+
+"CleanupReferenc" tid=27095 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7040  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+
+"ThreadPoolSingl" tid=27102 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x0000000000067d58  /system/lib64/libc.so (pthread_cond_timedwait+156)
+
+"CameraAvailabil" tid=27105 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"xt" tid=27107 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"ISEventThread" tid=27108 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"RVEventThread" tid=27109 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7040  /system/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks(art::Thread*)+152)
+
+"PXLEventThread" tid=27110 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"GoogleApiHandle" tid=27119 Native
+  #00  pc 0x000000000006acd8  /system/lib64/libc.so (__epoll_pwait+8)
+  #01  pc 0x000000000001f56c  /system/lib64/libc.so (epoll_pwait+52)
+
+"pool-3-thread-1" tid=27120 Native
+  #00  pc 0x000000000001d4ec  /system/lib64/libc.so (syscall+28)
+  #01  pc 0x00000000000e7460  /system/lib64/libart.so (art::ConditionVariable::TimedWait(art::Thread*, long, int)+172)
+
+"Binder:26662_4" tid=27125 Native
+  #00  pc 0x000000000006adc4  /system/lib64/libc.so (__ioctl+4)
+  #01  pc 0x0000000000024070  /system/lib64/libc.so (ioctl+136)

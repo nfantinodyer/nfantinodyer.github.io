@@ -104,78 +104,15 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Setup Section */
-.setup-section {
+/* Summary Section */
+.summary-section {
     margin-bottom: 3rem;
 }
 
-.setup-section h2 {
+.summary-section h2 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     color: #2c3e50;
-}
-
-.setup-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.file-list {
-    list-style: none;
-    margin: 1rem 0 2rem 0;
-}
-
-.file-list li {
-    padding: 0.5rem 0;
-    font-size: 0.95rem;
-}
-
-.file-list code {
-    background-color: #f8f9fa;
-    padding: 0.2rem 0.5rem;
-    border-radius: 3px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #e74c3c;
-}
-
-.folder-select {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.folder-input {
-    display: none;
-}
-
-.folder-label {
-    background-color: #3498db;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.folder-label:hover {
-    background-color: #2980b9;
-}
-
-.folder-status {
-    color: #666;
-    font-size: 0.9rem;
-}
-
-/* Issue Cards */
-.issue-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1.5rem;
-    overflow: hidden;
 }
 
 .issue-header {

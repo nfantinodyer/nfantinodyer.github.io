@@ -18,6 +18,26 @@
     <!-- Main Content -->
     <main class="main-content">
         <div class="container">
+            <!-- Log Directory Setup -->
+            <section class="setup-section">
+                <h2>Log File Setup</h2>
+                <div class="setup-card">
+                    <p>To use this tracker, organize your log files in a folder with these exact filenames:</p>
+                    <ul class="file-list">
+                        <li><code>ironsource_xa_j.log</code> - IronSource SDK ANR</li>
+                        <li><code>native_method_jnjj.log</code> - Native Method ANR</li>
+                        <li><code>chromium_webview.log</code> - Chromium WebView ANR</li>
+                        <li><code>libart_typelookup.log</code> - Libart TypeLookup ANR</li>
+                        <li><code>libart_condition.log</code> - Libart Condition ANR</li>
+                    </ul>
+                    <div class="folder-select">
+                        <input type="file" id="folderInput" webkitdirectory directory multiple class="folder-input">
+                        <label for="folderInput" class="folder-label">Select Log Folder</label>
+                        <span id="folderStatus" class="folder-status">No folder selected</span>
+                    </div>
+                </div>
+            </section>
+
             <!-- Summary Section -->
             <section class="summary-section">
                 <h2>Issue Summary</h2>
@@ -27,8 +47,8 @@
                         <p class="summary-number">5</p>
                     </div>
                     <div class="summary-card">
-                        <h3>Active ANRs</h3>
-                        <p class="summary-number">5</p>
+                        <h3>Logs Loaded</h3>
+                        <p class="summary-number" id="logsLoaded">0</p>
                     </div>
                     <div class="summary-card">
                         <h3>Affected Users</h3>
@@ -46,8 +66,8 @@
                 <h2>Known ANR Issues</h2>
                 <p class="section-subtitle">Last 28 days (Jun 11 – Jul 9, 2025)</p>
 
-                <!-- Issue 1 -->
-                <div class="issue-card">
+                <!-- Issue 1: IronSource -->
+                <div class="issue-card" data-issue-id="ironsource_xa_j">
                     <div class="issue-header">
                         <h3 class="issue-title">unavailable - com.ironsource.xa.J</h3>
                         <span class="issue-status">2 days ago</span>
@@ -75,15 +95,19 @@
                         </div>
                     </div>
                     <div class="log-section">
-                        <button class="toggle-log-btn" onclick="toggleLog('log1')">View Log File</button>
-                        <div id="log1" class="log-container hidden">
-                            <textarea class="log-textarea" placeholder="Paste log file content here..."></textarea>
+                        <div class="log-status">
+                            <span class="status-icon" id="status-ironsource_xa_j">⏳</span>
+                            <span class="status-text" id="text-ironsource_xa_j">No log file loaded</span>
+                        </div>
+                        <button class="toggle-log-btn" onclick="toggleLog('log-ironsource_xa_j')" disabled>View Log File</button>
+                        <div id="log-ironsource_xa_j" class="log-container hidden">
+                            <textarea class="log-textarea" readonly placeholder="Log file content will appear here..."></textarea>
                         </div>
                     </div>
                 </div>
 
-                <!-- Issue 2 -->
-                <div class="issue-card">
+                <!-- Issue 2: Native Method -->
+                <div class="issue-card" data-issue-id="native_method_jnjj">
                     <div class="issue-header">
                         <h3 class="issue-title">Native method - J.N.JJ</h3>
                         <span class="issue-status issue-status-production">In production - 18 hours ago</span>
@@ -107,15 +131,19 @@
                         </div>
                     </div>
                     <div class="log-section">
-                        <button class="toggle-log-btn" onclick="toggleLog('log2')">View Log File</button>
-                        <div id="log2" class="log-container hidden">
-                            <textarea class="log-textarea" placeholder="Paste log file content here..."></textarea>
+                        <div class="log-status">
+                            <span class="status-icon" id="status-native_method_jnjj">⏳</span>
+                            <span class="status-text" id="text-native_method_jnjj">No log file loaded</span>
+                        </div>
+                        <button class="toggle-log-btn" onclick="toggleLog('log-native_method_jnjj')" disabled>View Log File</button>
+                        <div id="log-native_method_jnjj" class="log-container hidden">
+                            <textarea class="log-textarea" readonly placeholder="Log file content will appear here..."></textarea>
                         </div>
                     </div>
                 </div>
 
-                <!-- Issue 3 -->
-                <div class="issue-card">
+                <!-- Issue 3: Chromium -->
+                <div class="issue-card" data-issue-id="chromium_webview">
                     <div class="issue-header">
                         <h3 class="issue-title">chromium-TrichromeWebViewGoogle.aab-stable-715111731 - WV.tI.b</h3>
                         <span class="issue-status">39 hours ago</span>
@@ -142,15 +170,19 @@
                         </div>
                     </div>
                     <div class="log-section">
-                        <button class="toggle-log-btn" onclick="toggleLog('log3')">View Log File</button>
-                        <div id="log3" class="log-container hidden">
-                            <textarea class="log-textarea" placeholder="Paste log file content here..."></textarea>
+                        <div class="log-status">
+                            <span class="status-icon" id="status-chromium_webview">⏳</span>
+                            <span class="status-text" id="text-chromium_webview">No log file loaded</span>
+                        </div>
+                        <button class="toggle-log-btn" onclick="toggleLog('log-chromium_webview')" disabled>View Log File</button>
+                        <div id="log-chromium_webview" class="log-container hidden">
+                            <textarea class="log-textarea" readonly placeholder="Log file content will appear here..."></textarea>
                         </div>
                     </div>
                 </div>
 
-                <!-- Issue 4 -->
-                <div class="issue-card">
+                <!-- Issue 4: Libart TypeLookup -->
+                <div class="issue-card" data-issue-id="libart_typelookup">
                     <div class="issue-header">
                         <h3 class="issue-title">[libart.so] art::TypeLookupTable::IsStringsEquals(char const*, unsigned int) const</h3>
                         <span class="issue-status">2 days ago</span>
@@ -174,15 +206,19 @@
                         </div>
                     </div>
                     <div class="log-section">
-                        <button class="toggle-log-btn" onclick="toggleLog('log4')">View Log File</button>
-                        <div id="log4" class="log-container hidden">
-                            <textarea class="log-textarea" placeholder="Paste log file content here..."></textarea>
+                        <div class="log-status">
+                            <span class="status-icon" id="status-libart_typelookup">⏳</span>
+                            <span class="status-text" id="text-libart_typelookup">No log file loaded</span>
+                        </div>
+                        <button class="toggle-log-btn" onclick="toggleLog('log-libart_typelookup')" disabled>View Log File</button>
+                        <div id="log-libart_typelookup" class="log-container hidden">
+                            <textarea class="log-textarea" readonly placeholder="Log file content will appear here..."></textarea>
                         </div>
                     </div>
                 </div>
 
-                <!-- Issue 5 -->
-                <div class="issue-card">
+                <!-- Issue 5: Libart Condition -->
+                <div class="issue-card" data-issue-id="libart_condition">
                     <div class="issue-header">
                         <h3 class="issue-title">[libart.so] art::ConditionVariable::WaitHoldingLocks(art::Thread*)</h3>
                         <span class="issue-status">2 days ago</span>
@@ -202,13 +238,17 @@
                         </div>
                         <div class="detail-row">
                             <span class="detail-label">Events:</span>
-                            <span class="detail-value">1}}</span>
+                            <span class="detail-value">1</span>
                         </div>
                     </div>
                     <div class="log-section">
-                        <button class="toggle-log-btn" onclick="toggleLog('log5')">View Log File</button>
-                        <div id="log5" class="log-container hidden">
-                            <textarea class="log-textarea" placeholder="Paste log file content here..."></textarea>
+                        <div class="log-status">
+                            <span class="status-icon" id="status-libart_condition">⏳</span>
+                            <span class="status-text" id="text-libart_condition">No log file loaded</span>
+                        </div>
+                        <button class="toggle-log-btn" onclick="toggleLog('log-libart_condition')" disabled>View Log File</button>
+                        <div id="log-libart_condition" class="log-container hidden">
+                            <textarea class="log-textarea" readonly placeholder="Log file content will appear here..."></textarea>
                         </div>
                     </div>
                 </div>
@@ -226,6 +266,83 @@
 
     <!-- JavaScript -->
     <script>
+        // Map of issue IDs to expected log filenames
+        const logFileMap = {
+            'ironsource_xa_j': 'ironsource_xa_j.log',
+            'native_method_jnjj': 'native_method_jnjj.log',
+            'chromium_webview': 'chromium_webview.log',
+            'libart_typelookup': 'libart_typelookup.log',
+            'libart_condition': 'libart_condition.log'
+        };
+
+        let loadedLogs = {};
+
+        // Handle folder selection
+        document.getElementById('folderInput').addEventListener('change', function(event) {
+            const files = event.target.files;
+            if (files.length > 0) {
+                document.getElementById('folderStatus').textContent = `Loading ${files.length} files...`;
+                processFiles(files);
+            }
+        });
+
+        // Process selected files
+        function processFiles(files) {
+            let matchedCount = 0;
+            let processedCount = 0;
+
+            Array.from(files).forEach(file => {
+                const fileName = file.name.toLowerCase();
+                
+                // Check if this file matches any of our expected log files
+                Object.entries(logFileMap).forEach(([issueId, expectedFile]) => {
+                    if (fileName === expectedFile) {
+                        matchedCount++;
+                        const reader = new FileReader();
+                        
+                        reader.onload = function(e) {
+                            loadedLogs[issueId] = e.target.result;
+                            updateIssueStatus(issueId, true);
+                            processedCount++;
+                            
+                            if (processedCount === matchedCount) {
+                                document.getElementById('folderStatus').textContent = 
+                                    `✓ Loaded ${matchedCount} log files`;
+                                document.getElementById('logsLoaded').textContent = matchedCount;
+                            }
+                        };
+                        
+                        reader.readAsText(file);
+                    }
+                });
+            });
+
+            if (matchedCount === 0) {
+                document.getElementById('folderStatus').textContent = 
+                    '⚠️ No matching log files found. Check filenames.';
+            }
+        }
+
+        // Update issue status when log is loaded
+        function updateIssueStatus(issueId, loaded) {
+            const statusIcon = document.getElementById(`status-${issueId}`);
+            const statusText = document.getElementById(`text-${issueId}`);
+            const button = document.querySelector(`[data-issue-id="${issueId}"] .toggle-log-btn`);
+            const textarea = document.querySelector(`#log-${issueId} .log-textarea`);
+            
+            if (loaded && loadedLogs[issueId]) {
+                statusIcon.textContent = '✅';
+                statusText.textContent = 'Log file loaded';
+                button.disabled = false;
+                textarea.value = loadedLogs[issueId];
+                
+                // Auto-resize textarea
+                textarea.style.height = 'auto';
+                textarea.style.height = textarea.scrollHeight + 'px';
+            }
+        }
+
+        // Toggle log visibility
         function toggleLog(logId) {
             const logContainer = document.getElementById(logId);
             const button = logContainer.previousElementSibling;
@@ -239,12 +356,44 @@
             }
         }
 
-        // Auto-resize textareas
-        document.querySelectorAll('.log-textarea').forEach(textarea => {
-            textarea.addEventListener('input', function() {
-                this.style.height = 'auto';
-                this.style.height = this.scrollHeight + 'px';
-            });
+        // Export logs as JSON
+        function exportLogs() {
+            const dataStr = JSON.stringify(loadedLogs, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'gunslinger_logs_' + new Date().toISOString().split('T')[0] + '.json';
+            link.click();
+        }
+
+        // Check for previously saved session
+        window.addEventListener('load', function() {
+            const savedSession = localStorage.getItem('gunslinger_session');
+            if (savedSession) {
+                try {
+                    loadedLogs = JSON.parse(savedSession);
+                    let count = 0;
+                    Object.keys(loadedLogs).forEach(issueId => {
+                        if (loadedLogs[issueId]) {
+                            updateIssueStatus(issueId, true);
+                            count++;
+                        }
+                    });
+                    document.getElementById('logsLoaded').textContent = count;
+                    document.getElementById('folderStatus').textContent = 
+                        `✓ Restored ${count} logs from previous session`;
+                } catch (e) {
+                    console.error('Failed to restore session:', e);
+                }
+            }
+        });
+
+        // Save session when logs are loaded
+        window.addEventListener('beforeunload', function() {
+            if (Object.keys(loadedLogs).length > 0) {
+                localStorage.setItem('gunslinger_session', JSON.stringify(loadedLogs));
+            }
         });
     </script>
 </body>
